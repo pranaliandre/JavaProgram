@@ -9,7 +9,7 @@
 
 package com.bridgelabz.functional;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 import com.bridgelabz.utility.Utility;
 
@@ -18,18 +18,21 @@ public class Addition
 	public static void main(String[] args)
 	{
 		//Utility  utility = new Utility();
-		Scanner scanner = new Scanner(System.in);
-		int firstnumber, secondnumber, result;
+		//Scanner scanner = new Scanner(System.in);
+		//int firstnumber, secondnumber, result;
 		
 		System.out.println("we need two numbers:");
 		System.out.println("Enter your first number:");
-		firstnumber = scanner.nextInt();
+		int firstnumber=Utility.integervalue(); 
+		//firstnumber = scanner.nextInt();
 		
 		System.out.println("Enter your second number:");
-		secondnumber = scanner.nextInt();
+		int secondnumber=Utility.integervalue(); 
+		//secondnumber = scanner.nextInt();
 		
-		result = Utility.add(firstnumber,secondnumber);
+		int result = Utility.add(firstnumber,secondnumber);
 		System.out.println("Addition of two numbers:"+result);
-		scanner.close();
+		System.out.println("welcome");
+		//scanner.close();
 	}
 }

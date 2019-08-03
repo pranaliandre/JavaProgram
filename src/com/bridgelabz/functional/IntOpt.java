@@ -9,7 +9,7 @@
 
 package com.bridgelabz.functional;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 import com.bridgelabz.utility.Utility;
 
@@ -18,28 +18,32 @@ public class IntOpt {
     public static void main(String args[])
     {
     	int a,b,c,value = 0,num = 0;
-        Scanner scanner = new Scanner(System.in);
+        //Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the value of a:");
-        a=scanner.nextInt();
+        a=Utility.integervalue();
+        //a=scanner.nextInt();
         
         System.out.print("Enter the value of b:");
-        b=scanner.nextInt();
+        b=Utility.integervalue();
+        //b=scanner.nextInt();
         
         System.out.print("Enter the value of c:");
-        c=scanner.nextInt();
+        c=Utility.integervalue();
+        //c=scanner.nextInt();
                                         
         System.out.println("1.a + b *c"); 
         System.out.println("2.a * b + c"); 
         System.out.println("3.c + a / b");
         System.out.println("4.a % b + c");
         System.out.println("enter the no of operation");
-        num=scanner.nextInt();
+        num=Utility.integervalue();
+        //num=scanner.nextInt();
        
      
 		value=Utility.integeropt(a, b, c, num, value);
 		System.out.print(value);
 
-        scanner.close();
+      //  scanner.close();
     }
 }
 

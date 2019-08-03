@@ -8,7 +8,7 @@
 
 package com.bridgelabz.functional;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 import com.bridgelabz.utility.Utility;
 
@@ -18,12 +18,13 @@ public class LeapYear {
 	
 	    public static void main(String args[])
 	    {
-	        Scanner scanner = new Scanner(System.in);
+	       // Scanner scanner = new Scanner(System.in);
 	        System.out.println("Enter any year:");
-	        int year = scanner.nextInt();
+	        int year =Utility.integervalue();
+	        //int year = scanner.nextInt();
 	        boolean flag = false;
 	        Utility.leap(year);
-scanner.close();
+//scanner.close();
 	    }
 	}
 

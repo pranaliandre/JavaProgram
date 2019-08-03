@@ -9,20 +9,23 @@
 
 package com.bridgelabz.functional;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 import com.bridgelabz.utility.Utility;
 
 public class SpringSeason {
 	public static void main(String[] args)
 	{
-		Scanner Scanner = new Scanner(System.in);
+		//Scanner Scanner = new Scanner(System.in);
 		System.out.println("Enter the month:");
-		int m = Scanner.nextInt();
+		int month=Utility.integervalue(); 
+		//int month = Scanner.nextInt();
 		System.out.println("entr the date:");
-		int d = Scanner.nextInt();
-		Utility.spring( m,d);
-		Scanner.close();
+		int day=Utility.integervalue(); 
+
+		//int day = Scanner.nextInt();
+		Utility.spring( month,day);
+		//Scanner.close();
 	}
 
 }

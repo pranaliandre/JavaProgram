@@ -1,5 +1,5 @@
 /***************************************************************************************************************************************
- *  Purpose:  To the purpose of three names as input and prints out a proper 
+ *  Purpose: To the purpose of three names as input and prints out a proper 
  *            sentence with the names in the reverse of the order given.
  *
  *  @author  Andre Pranali
@@ -23,7 +23,6 @@ public class PrintThreeNames
         Scanner scanner = new Scanner(System.in);
          
         System.out.println("Enter The three names :");
-         
         String inputString = scanner.nextLine();
        
          
@@ -34,7 +33,7 @@ public class PrintThreeNames
          
         System.out.println("Output String : "+"Hii"+" "+outputString);
          
-        scanner.close();
+       scanner.close();
     }
 }
 
