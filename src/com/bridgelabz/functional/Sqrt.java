@@ -1,26 +1,22 @@
 /******************************************************************************
- *  Purpose: calculate the head percentage of head and tail.
+ *  Purpose: To calculatethe square root.
  *  @author  Andre Pranali
- *  @version 1.15
- *  @since   3-08-2019
+ *  @version 1.18
+ *  @since   6-08-2019
  *
  ******************************************************************************/
 package com.bridgelabz.functional;
 
 import com.bridgelabz.utility.Utility;
 
-public class FlipCoin {
-	
+public class Sqrt {
+
 	public static void main(String[] args) {
-		
-		
-		System.out.println("Enter amount of times you want the coin to be tossed :");
-		int times=Utility.integervalue();
-		
-		Utility.flipcoin(times);
-		
-		}
-		
+    double c=Double.parseDouble(args[0]);
+	double epsilon = 1e-15;
+    double  t=c;
+	 t=Utility.squareroot(t, epsilon, c);
+	System.out.println("answer is:"+t);
 	}
 
-
+}

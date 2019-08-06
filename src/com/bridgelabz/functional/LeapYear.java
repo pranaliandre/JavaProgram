@@ -1,7 +1,7 @@
 /******************************************************************************
  *  Purpose: to calculate  the Year is a Leap Year or not a Leap Year.
  *  @author  Andre Pranali
- *  @version 1.0
+ *  @version 1.2
  *  @since   31-07-2019
  *
  ******************************************************************************/
@@ -21,8 +21,6 @@ public class LeapYear {
 	       // Scanner scanner = new Scanner(System.in);
 	        System.out.println("Enter any year:");
 	        int year =Utility.integervalue();
-	        //int year = scanner.nextInt();
-	        boolean flag = false;
 	        Utility.leap(year);
 //scanner.close();
 	    }

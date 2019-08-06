@@ -1,26 +1,24 @@
 /******************************************************************************
- *  Purpose: calculate the head percentage of head and tail.
+ *  Purpose: To calculate the harmonic number.
  *  @author  Andre Pranali
- *  @version 1.15
- *  @since   3-08-2019
+ *  @version 1.17
+ *  @since   6-08-2019
  *
  ******************************************************************************/
 package com.bridgelabz.functional;
 
 import com.bridgelabz.utility.Utility;
 
-public class FlipCoin {
-	
+public class HarmonicNumber {
+
 	public static void main(String[] args) {
-		
-		
-		System.out.println("Enter amount of times you want the coin to be tossed :");
-		int times=Utility.integervalue();
-		
-		Utility.flipcoin(times);
-		
-		}
+		  int n=Integer.parseInt(args[0]);
+          
+       //   System.out.println("Harmonic number:");
+			
+		Utility.harmonic(n);
+		//System.out.println(sum);
 		
 	}
 
-
+}

@@ -1,16 +1,10 @@
-/******************************************************************************
- *  Purpose: to calculate Euclidean distance.
- *  @author  Andre Pranali
- *  @version 1.0
- *  @since   2-08-2019
- *
- ******************************************************************************/
+
 
 package com.bridgelabz.functional;
 /******************************************************************************
- *  Purpose: to the purpose of calculating average, minum and ,maxmum.
+ *  Purpose: to the purpose of calculating average, minimum and ,maxmum.
  *  @author  Andre Pranali
- *  @version 1.0
+ *  @version 1.9
  *  @since   2-08-2019
  *
  ******************************************************************************/

@@ -1,7 +1,7 @@
 /******************************************************************************
  *  Purpose: the purpose of calculate the temperature of fahrenheit and celcius. 
  *  @author  Andre Pranali
- *  @version 1.0
+ *  @version 1.12
  *  @since   3-08-2019
  *
  ******************************************************************************/
@@ -30,7 +30,7 @@ public class TemperaturConversion {
         temperatue = scanner.nextFloat();
         float fahrenheit = Utility.toFahrenheit(temperatue);
         System.out.printf("%.02f degree celsius is equal to %.02f degree fahrenheit %n", temperatue, fahrenheit);
-		
+		scanner.close();
 		
 		
 	}

@@ -2,7 +2,7 @@
  *  Purpose: To purpose of calculate spring season month.
  *
  *  @author  Andre Pranali
- *  @version 1.0
+ *  @version 1.5
  *  @since   1-08-2019
  *
  ******************************************************************************/

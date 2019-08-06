@@ -16,6 +16,7 @@ public class Utility
 	
 	static  Scanner Scanner = new Scanner(System.in);
 	
+	
 	/*****************************************************************************************************************
 	 * @return: return to the integer value.
 	 ****************************************************************************************************************/
@@ -97,7 +98,18 @@ public class Utility
 	         *  @version 1.0
 	         *  @since   2-08-2019
 	         *
-	         ******************************************************************************/
+	         **********************************************************************
+//import java.util.Scanner;
+
+public class primenumber
+{
+	public static void main(String args[])
+	{
+		// initialize and declare here.
+		int s1, s2;
+		System.out.print("Enter the lower limit : "); 
+		s1=Utility.integervalue();
+		System.out.print("Enter th********/
 
 			if(year % 400 == 0)
 	        {
@@ -349,6 +361,7 @@ public class Utility
 	    return payment;
     }
     
+	
     /****************************************************************************************************
      * @param degree: It takes input 
      * @return:       Return result
@@ -381,6 +394,87 @@ public class Utility
 		
 	}
 		
+	  
 	
+	/*************************************************************************************************************************
+	 * @param i: It takes integer number for calculating power.
+	 * @param n: It take number for the calculating power.
+	 * @return:  return power.
+	 ************************************************************************************************************************/
+	public static int power(int i,int n){
+		i = 0;
+		 int power = 1;
+		 while (i <= n)
+         {
+		
+             System.out.println("2^"+i+" = " + power);
+             power = power * 2;
+             i++;
+             
+         }
+		return power;
+		
+	}
+	
+	/**************************************************************************************************************************
+	 * @param n: It take number for calculatin the harmoniv number
+	 * @return:  Return of value sum. 
+	 **************************************************************************************************************************/
+	public static double harmonic(double n) {
+		double sum = 0.0;
+		for(int i=1;i<=n;i++) {
+			sum += 1.0 / i ;
+		//	i++;
+		}
+		System.out.println(sum);
+		return sum;
+		
+	}
+	/**************************************************************************************************************************
+	 * @param t:       It take input from command line argument.
+	 * @param epsilon: It take input from command line argument.
+	 * @param c        It take input from command line argument.
+	 * @return:        Return square root value.
+	 ***********************************************************************************************************/
+	public static double squareroot(double t,double epsilon,double c)
+	{
+		while(Math.abs(t - c/t) > epsilon*t)
+		{  
+			   t = (c/t + t) / 2.0;
+		}
+		return t;
+	}
+	
+	/*********************************************************************************************************************************************************************************
+	 * @param s1: It take input for lower limit.
+	 * @param s2: It take input for upper limit.
+	 * @return:   Return prime no.
+	 ***********************************************************************************************************************************************************************/
+	public static int prime(int s1,int s2) {
+       
+         int i = 0, count = 0,j; 
+		for(i = s1; i <= s2; i++)
+		{
+			for( j = 2; j < i; j++)
+			{
+				if(i % j == 0)
+				{
+					count = 0;
+					break;
+				}
+				else
+				{
+					count = 1;
+				}
+			}
+			if(count == 1)
+			{
+				System.out.println(i);
+			}
+		}
+
+		return i;
+	}
+		  
 }
 

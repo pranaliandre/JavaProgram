@@ -3,7 +3,7 @@
  *            sentence with the names in the reverse of the order given.
  *
  *  @author  Andre Pranali
- *  @version 1.0
+ *  @version 1.1
  *  @since   31-07-2019
  *
  **************************************************************************************************************************************/
