@@ -1,7 +1,7 @@
 /******************************************************************************
- *  Purpose: To calculate the harmonic number.
+ *  Purpose: To find the repeated array element.
  *  @author  Andre Pranali
- *  @version 1.17
+ *  @version 1.16
  *  @since   6-08-2019
  *
  ******************************************************************************/
@@ -9,12 +9,15 @@ package com.bridgelabz.functional;
 
 import com.bridgelabz.utility.Utility;
 
-public class HarmonicNumber {
+public class arrayRepeated {
+	public static void main(String[] args)
+	{
+	int arr[]= {4,3,5,7,6,8,4,3,5};
+	int arr_size=arr.length;
 
-	public static void main(String[] args) {
-		  int n=Integer.parseInt(args[0]);
-		Utility.harmonic(n);
-		
+	Utility.array(arr,arr_size);
 	}
 
 }
+
+

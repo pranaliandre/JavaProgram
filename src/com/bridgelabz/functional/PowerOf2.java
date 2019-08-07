@@ -1,8 +1,8 @@
 /******************************************************************************
  *  Purpose: To calculate Powers of 2 that are less than 2.
  *  @author  Andre Pranali
- *  @version 1.16
- *  @since   6-08-2019
+ *  @version 1.21
+ *  @since   7-08-2019
  *
  ******************************************************************************/
 package com.bridgelabz.functional;

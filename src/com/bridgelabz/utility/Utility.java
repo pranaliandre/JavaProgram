@@ -475,6 +475,48 @@ public class primenumber
 
 		return i;
 	}
+	/*****************************************************************************************************************
+	 * @param i For finding the index position of array.
+	 * @param n Enter the number of elements you want. 
+	 *****************************************************************************************************************/
+	public static void largest(int i,int n) {
+
+		int a[]=new int [n];
+	int j;
+	
+	
+	for(i=0;i<n;i++)
+	{
+		for(j = i + 1; j < n; j++)
+		{
+			if(a[i]>a[j])
+			{
+			int temp=a[i];
+			a[i]=a[j];
+			a[j]=temp;
+			}
+		}
+	}
+    
+}
+
+	/****************************************************************************************************************************************
+	 * @param arr It takes array for calculating the repeated element. 
+	 * @param size It takes length
+	 ***************************************************************************************************************************************/
+	public static void array(int arr[],int size)
+	{
+		int i,j;
+		System.out.println("Repeated elments are:");
+	for( i = 0; i < size; i++)
+	{  
+	       for( j = i + 1; j < size; j++) 
+	       {  
+	           if(arr[i] == arr[j])  
+	               System.out.print(arr[i] + " ");
+	       }  
+	 }  
 		  
+  }
 }
 
