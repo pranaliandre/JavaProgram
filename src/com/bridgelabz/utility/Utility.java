@@ -15,7 +15,7 @@ public class Utility
 	
 	
 	static  Scanner Scanner = new Scanner(System.in);
-	
+
 	
 	/*****************************************************************************************************************
 	 * @return: return to the integer value.
@@ -475,48 +475,327 @@ public class primenumber
 
 		return i;
 	}
-	/*****************************************************************************************************************
-	 * @param i For finding the index position of array.
-	 * @param n Enter the number of elements you want. 
-	 *****************************************************************************************************************/
-	public static void largest(int i,int n) {
+	
+	
+	
 
-		int a[]=new int [n];
-	int j;
-	
-	
-	for(i=0;i<n;i++)
+
+/*****************************************************************************************************************
+ * @param i For finding the index position of array.
+ * @param n Enter the number of elements you want. 
+ *****************************************************************************************************************/
+public static void largest(int i,int n) {
+
+	int a[]=new int [n];
+int j;
+
+
+for(i=0;i<n;i++)
+{
+	for(j = i + 1; j < n; j++)
 	{
-		for(j = i + 1; j < n; j++)
+		if(a[i]>a[j])
 		{
-			if(a[i]>a[j])
-			{
-			int temp=a[i];
-			a[i]=a[j];
-			a[j]=temp;
-			}
+		int temp=a[i];
+		a[i]=a[j];
+		a[j]=temp;
 		}
 	}
-    
 }
 
-	/****************************************************************************************************************************************
-	 * @param arr It takes array for calculating the repeated element. 
-	 * @param size It takes length
-	 ***************************************************************************************************************************************/
-	public static void array(int arr[],int size)
-	{
-		int i,j;
-		System.out.println("Repeated elments are:");
-	for( i = 0; i < size; i++)
-	{  
-	       for( j = i + 1; j < size; j++) 
-	       {  
-	           if(arr[i] == arr[j])  
-	               System.out.print(arr[i] + " ");
-	       }  
-	 }  
-		  
-  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************************************************************************************
+ * @param arr It takes array for calculating the repeated element. 
+ * @param size It takes length
+ ***************************************************************************************************************************************/
+public static void array(int arr[],int size)
+{
+	int i,j;
+	System.out.println("Repeated elments are:");
+for( i = 0; i < size; i++)
+{  
+       for( j = i + 1; j < size; j++) 
+       {  
+           if(arr[i] == arr[j])  
+               System.out.print(arr[i] + " ");
+       }  
+ }  
+	  
+}
+
+/***************************************************************************************************************************************************
+ * @param number: It takes number for factorization.
+ * @return:       Return result.
+ ***************************************************************************************************************************************************/
+public static int factor(int number) {
+	
+
+		while(number%2==0)
+		{
+			System.out.println(2 + " ");
+			number= number/2;
+		}
+		//for odd element
+		for(int i=3;i<=Math.sqrt(number);i+=2)
+		{
+			while(number%i==0)
+			{
+				System.out.println(i+"");
+				number=number/i;
+			}
+		}
+			if(number>2)
+			{
+				System.out.println(number);
+			}
+	
+	return number;
+}
+
+/********************************************************************************************************************************************************
+ * @param rolldie take input
+ * @return
+ *******************************************************************************************************************************************************/
+public static int roll(int rolldie)
+{
+int SIDES = 6;
+rolldie = (int) (Math.random() * SIDES) + 1;
+return rolldie;
+// System.out.println(rolldie);
+}
+
+
+/*******************************************************************************************************************************************
+* @param n Enter value calculating the happy number or not.
+* @return  return check happy numbe5r or not.
+*******************************************************************************************************************************************/
+public static int happy(int n)
+{
+int s = 0;
+int d;
+while(n!=0)
+{
+	
+	d=n%10;
+	s=s+d*d;
+	n=n/10;
+	
+}
+return s;
+
+}
+
+/**********************************************************************************************************************
+* @param n Enter value calculating the armstrong number or not.
+* @return  Return armstrong or not.
+**************************************************************************************************************************/
+public static int armStrong(int n)
+{
+int s = 0;
+int d;
+while(n!=0)
+{
+	
+	d=n%10;
+	s=s+d*d*d;
+	n=n/10;
+	
+}
+return s;
+
+}
+
+/***********************************************************************************************************************
+* @param n Enter the value for calculating magic matrix.
+***********************************************************************************************************************/
+public static void magicSqaure(int n) 
+{ 
+int[][] magicSquare = new int[n][n]; 
+  
+int i = n/2; 
+int j = n-1; 
+
+
+for (int num=1; num <= n*n; ) 
+{ 
+    if (i==-1 && j==n)
+    { 
+        j = n-2; 
+        i = 0; 
+    } 
+    else
+    { 
+      
+        if (j == n) 
+            j = 0; 
+              
+    
+        if (i < 0) 
+            i=n-1; 
+    } 
+      
+ 
+    if (magicSquare[i][j] != 0)  
+    { 
+        j -= 2; 
+        i++; 
+        continue; 
+    } 
+    else
+    
+        magicSquare[i][j] = num++;  
+          
+
+    j++;  i--;  
+} 
+
+
+System.out.println("The Magic Square for "+n+":"); 
+System.out.println("Sum of each row or column "+n*(n*n+1)/2+":"); 
+for(i=0; i<n; i++) 
+{ 
+    for(j=0; j<n; j++) 
+        System.out.print(magicSquare[i][j]+" "); 
+    System.out.println(); 
+} 
+}
+
+/************************************************************************************************************************
+* @param stake: Enter the value for stake.
+* @param goal:  Enter the value for goal.
+* @param number Enter the value for number.
+*************************************************************************************************************************/
+public static void gambler(int stake, int goal, int number)
+{
+double bets = 0;
+double win = 0;
+for(int i=0;i<number;i++)
+{
+int cash =stake;
+while(cash>0 && cash<goal) {
+bets++;
+	if(Math.random()<0.5)
+		cash++;
+		else
+			cash--;
+}
+if(cash==goal)
+	win++;
+}
+System.out.println("win is:"+win);
+System.out.println("percentage of win is:"+100*win/number);
+System.out.println("percentage of lost is:"+100*(number-win)/number);
+System.out.println("total bets are:"+bets);
+}
+
+
+
+
+/********************************************************************************************************************************************************************************************************************
+* @param arr: It take value array.
+* @param n:   Enter the number of value.
+* @return:    Return the result.
+****************************************************************************************************************************************************************************/
+public static int removeDuplicateElements(int arr[], int n){ 
+int[] temp = new int[n];  
+int j = 0;  
+for (int i=0; i<n-1; i++){  
+    if (arr[i] != arr[i+1]){  
+        temp[j++] = arr[i];  
+    }  
+ }  
+temp[j++] = arr[n-1];     
+
+for (int i=0; i<j; i++){  
+    arr[i] = temp[i];  
+}  
+return j;  
+}  
+
+/**************************************************************************************************************************
+ * @param n: It takes input from user.
+ **************************************************************************************************************************/
+public static void arm(int n)
+{
+int s1=n;
+int length=0;
+
+while(s1!=0)
+{
+	length=length+1;
+	s1=s1/10;
+}
+System.out.println(length);
+int s2=n;
+int rem,arm=0;
+while(s2!=0)
+{	int mul=1;
+	rem=s2%10;
+for(int i=1;i<=length;i++)
+{
+	mul=mul*rem;
+
+}
+arm=arm+mul;
+s2=s2/10;
+}
+
+if(n==arm)
+{
+	
+	System.out.println("Armstrong number");
+}
+else
+{
+	System.out.println("Not a Armstrong number");
+	}
+
+}
+
+
+/***************************************************************************************************************************************************************************************************************************
+ * @param x It takes input.
+ * @return
+ ***************************************************************************************************************************************/
+public static int swapNibbles(int x) 
+	{ 
+	    return ((x & 0x0F) << 4 | (x & 0xF0) >> 4); 
+	} 
+
+}
+	
 

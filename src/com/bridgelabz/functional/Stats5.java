@@ -1,6 +1,4 @@
 
-
-package com.bridgelabz.functional;
 /******************************************************************************
  *  Purpose: to the purpose of calculating average, minimum and ,maxmum.
  *  @author  Andre Pranali
@@ -8,8 +6,10 @@ package com.bridgelabz.functional;
  *  @since   2-08-2019
  *
  ******************************************************************************/
-import com.bridgelabz.utility.Utility;
 
+
+package com.bridgelabz.functional;
+import com.bridgelabz.utility.Utility;
 public class Stats5 {
 	
 	public static void main(String[] args)
