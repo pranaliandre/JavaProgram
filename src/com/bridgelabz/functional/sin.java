@@ -1,3 +1,11 @@
+/******************************************************************************
+ *  Purpose: To calculate the sin value.
+ *
+ *  @author  Andre Pranali
+ *  @version 1.29
+ *  @since   31-07-2019
+ *
+ ******************************************************************************/
 package com.bridgelabz.functional;
 
 public class sin {

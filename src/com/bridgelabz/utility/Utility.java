@@ -92,25 +92,7 @@ public class Utility
 		if(year>=1582 && year<10000)   
 	         	 { 
 
-	        boolean flag=true;/******************************************************************************
-	         *  Purpose: 
-	         *  @author  Andre Pranali
-	         *  @version 1.0
-	         *  @since   2-08-2019
-	         *
-	         **********************************************************************
-//import java.util.Scanner;
-
-public class primenumber
-{
-	public static void main(String args[])
-	{
-		// initialize and declare here.
-		int s1, s2;
-		System.out.print("Enter the lower limit : "); 
-		s1=Utility.integervalue();
-		System.out.print("Enter th********/
-
+	        boolean flag=true;
 			if(year % 400 == 0)
 	        {
 	            flag = true;
@@ -796,6 +778,26 @@ public static int swapNibbles(int x)
 	    return ((x & 0x0F) << 4 | (x & 0xF0) >> 4); 
 	} 
 
+/*********************************************************************************************************
+ * @param n
+ ********************************************************************************************************/
+public static void binary(int n)
+{String x="";
+	while(n>0)
+	{	
+		int count = 0;
+		int a=n%2;
+		if(a==1)
+		{
+		
+			count++;
+		}
+	x=x+" "+a;
+	n=n/2;
+	}
+
+}
+	  
 }
 	
 
