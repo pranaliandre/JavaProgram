@@ -290,6 +290,11 @@ public class Utility
 	}
     
 	
+	/**
+	 * @param temperature
+	 * @param speed
+	 * @return
+	 */
 	public static double chill(double temperature, double speed) {
 		double chill1 = 35.74 + 0.6215*temperature + (0.4275*temperature-35.75)*Math.pow(speed,0.16);
 		return chill1;
@@ -694,7 +699,7 @@ bets++;
 		cash++;
 		else
 			cash--;
-}
+} 
 if(cash==goal)
 	win++;
 }
