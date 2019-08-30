@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> functional
 package com.bridgelabz.lib;
 
 import java.util.ArrayList;
@@ -468,4 +471,8 @@ public final class StdIn {
         System.out.println();
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> functional

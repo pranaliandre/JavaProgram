@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /******************************************************************************
  *  Purpose: To creating a BLRandom class for a various distribution.
  *  @author  Andre Pranali
@@ -6,6 +7,8 @@
  *
  ******************************************************************************/
 
+=======
+>>>>>>> functional
 package com.bridgelabz.lib;
 import java.util.Random;
 import java.util.Scanner;
@@ -626,4 +629,8 @@ public class BLRandom {
             System.out.println();
         }
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> functional
